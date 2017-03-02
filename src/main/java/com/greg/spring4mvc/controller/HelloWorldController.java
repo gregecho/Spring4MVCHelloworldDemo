@@ -1,8 +1,5 @@
 package com.greg.spring4mvc.controller;
 
-
-import java.util.Map;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +16,7 @@ public class HelloWorldController {
 	
 	@RequestMapping(value="/helloagain", method = RequestMethod.GET)
     public String sayHelloAgain(ModelMap model) {
+		System.out.println("test");
         model.addAttribute("greeting", "Hello World Again, from Spring 4 MVC");
         return "welcome";
     }
