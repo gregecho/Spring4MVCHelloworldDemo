@@ -1,5 +1,7 @@
 package com.greg.spring4mvc.configuration;
 
+import javax.servlet.Filter;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 /*
 import javax.servlet.ServletContext;
@@ -42,4 +44,9 @@ public class HelloWorldInitializer extends AbstractAnnotationConfigDispatcherSer
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
 	}
+	@Override
+    protected Filter[] getServletFilters() {
+        Filter [] singleton = { new CORSFilter()};
+        return singleton;
+    }
 }
