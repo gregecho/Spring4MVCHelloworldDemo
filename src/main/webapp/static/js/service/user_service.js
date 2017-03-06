@@ -21,8 +21,7 @@ angular
 
 							function fetchAllUsers() {
 								var deferred = $q.defer();
-								$http
-										.get(REST_SERVICE_URI)
+								$http.get(REST_SERVICE_URI)
 										.then(
 												function(response) {
 													deferred

@@ -11,6 +11,7 @@
   ],
   "dependencies": {
     "bootstrap": "latest",
-    "angular": "angularjs#^1.6.2"
+    "angular": "1.6.3-build.5306+sha.6ccbfa6",
+    "angular-route": "1.6.3-build.5306"
   }
 }
