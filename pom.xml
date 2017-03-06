@@ -2,17 +2,23 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.greg.springmvc</groupId>
-	<artifactId>Spring4MVCFormValidationExample</artifactId>
+	<artifactId>Spring4MVCAngularJSExample</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring4MVCFormValidationExample Maven Webapp</name>
+	<name>Spring4MVCAngularJSExample Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<springframework.version>4.0.6.RELEASE</springframework.version>
+		<springframework.version>4.3.1.RELEASE</springframework.version>
 		<hibernate.validator.version>5.1.2.Final</hibernate.validator.version>
 		<javax.validation.version>1.1.0.Final</javax.validation.version>
+		<jackson.version>2.7.5</jackson.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
 		<!-- Spring dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -29,18 +35,18 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
-		 <!-- jsr303 validation dependencies-->
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>${javax.validation.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>${hibernate.validator.version}</version>
-        </dependency>
-         <!-- Servlet dependencies -->
+		<!-- jsr303 validation dependencies -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${javax.validation.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
+		</dependency>
+		<!-- Servlet dependencies -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -82,6 +88,6 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		<finalName>Spring4MVCFormValidationExample</finalName>
+		<finalName>Spring4MVCAngularJSExample</finalName>
 	</build>
 </project>

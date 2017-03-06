@@ -9,7 +9,8 @@
     "test",
     "tests"
   ],
-  "dependencies" : {
-  	"bootstrap" : "latest"
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "angularjs#^1.6.2"
   }
 }
